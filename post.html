@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View/Edit Post</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>View/Edit Blog Post</h1>
+    <div id="post-content">
+        <label for="edit-title">Title:</label>
+        <input type="text" id="edit-title"><br>
+
+        <label for="edit-content">Content:</label>
+        <textarea id="edit-content"></textarea><br>
+
+        <button onclick="updatePost()">Update Post</button>
+        <button onclick="deletePost()">Delete Post</button>
+    </div>
+    <a href="index.html">Back to Home</a>
+
+    <script src="script.js"></script>
+    <script>
+        loadPost();
+    </script>
+</body>
+</html>
